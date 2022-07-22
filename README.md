@@ -6,9 +6,9 @@ This project is currently more of a demonstration for how zasm could be used to 
 zasm provides enough information to have imports/externals/relocations/entrypoints.
 
 ## LIEF
-This project builds upon [LIEF](https://github.com/lief-project/LIEF) to generate the binary modules, the interface was built to hide this and
-may or may not change in the future. LIEF can currently only generate PE files from scratch which, this depends if and when LIEF might add support for generating more binaries from scratch. LIEF is a wonderful
-library and we do hope to be able to make more use of it.
+This project builds upon [LIEF](https://github.com/lief-project/LIEF) to generate the binary module(s), the interface was built to hide this. 
+LIEF can currently only generate PE files from scratch so it might be replaced in the future, this depends if and when LIEF might add 
+support for generating more binaries from scratch. LIEF is a wonderful library and we do hope to be able to make more use of it.
 
 ## Goals
 Add more support for modules like COFF and potentially be fully independent from LIEF, this is not set in stone.
