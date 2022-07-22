@@ -1,5 +1,5 @@
 # zasm-modules
-Generating binary modules with zasm and [LIEF](https://github.com/lief-project/LIEF).
+Generating binary modules with [zasm](https://github.com/zyantific/zasm) and [LIEF](https://github.com/lief-project/LIEF).
 
 ## Project
 This project is currently more of a demonstration for how zasm could be used to generate binary modules,
