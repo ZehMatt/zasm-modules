@@ -13,6 +13,9 @@ library and we do hope to be able to make more use of it.
 ### Goals
 Add more support for modules like COFF and potentially be fully independent from LIEF, this is not set in stone.
 
+### Example
+See the [example here](https://github.com/ZehMatt/zasm-modules/blob/master/src/example/main.cpp)
+
 ### Compiling
 This library ships with an example project and uses CMake. Following should be able to build the
 project:
