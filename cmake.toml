@@ -1,0 +1,29 @@
+# Reference: https://build-cpp.github.io/cmkr/cmake-toml
+[project]
+name = "zasm-modules"
+languages = ["CXX"]
+
+[subdir.thirdparty]
+
+[target.zasm-modules]
+alias = "zasm::modules"
+type = "static"
+sources = ["src/zasm-modules/**.cpp"]
+headers = ["src/zasm-modules/*.hpp", "include/zasm/modules/*.hpp"]
+include-directories = ["include"]
+compile-features = ["cxx_std_17"]
+link-libraries = [
+	"zasm::common",
+	"zasm::zasm",
+	"LIEF::LIEF",
+]
+
+[target.example]
+type = "executable"
+sources = ["src/example/**.cpp"]
+headers = ["src/example/**.hpp"]
+compile-features = ["cxx_std_17"]
+link-libraries = [
+	"zasm::common",
+	"zasm::modules",
+]

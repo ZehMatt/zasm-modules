@@ -1,0 +1,17 @@
+# Reference: https://build-cpp.github.io/cmkr/cmake-toml
+
+[options]
+LIEF_EXAMPLES = false
+LIEF_USE_CCACHE = false
+LIEF_ENABLE_JSON = false
+LIEF_TESTS = false
+ZASM_BUILD_TESTS = false
+ZASM_BUILD_BENCHMARKS = false
+
+[fetch-content.LIEF]
+git = "https://github.com/lief-project/LIEF.git"
+tag = "ddbf40f"
+
+[fetch-content.zasm]
+git = "https://github.com/zyantific/zasm.git"
+tag = "fb8b7357cb674f3c29a17ed2444a6355607bdef4"
